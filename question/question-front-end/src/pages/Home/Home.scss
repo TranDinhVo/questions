@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 15px;
+  align-items: center;
+  li {
+    margin-right: 25px;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

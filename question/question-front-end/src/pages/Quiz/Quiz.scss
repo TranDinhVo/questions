@@ -1,0 +1,72 @@
+.quiz {
+  border: 1px solid #ddd;
+  padding: 10px 25px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__question {
+    &--true {
+      &::after {
+        content: "Đúng";
+        padding: 4px 16px;
+        display: inline-flex;
+
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+    &--false {
+      &::after {
+        content: "Sai";
+        padding: 4px 16px;
+        display: inline-flex;
+        background-color: red;
+        border-radius: 10px;
+        color: white;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+  }
+  &__options {
+    &--item {
+      margin-left: 20px;
+      margin-top: 8px;
+      span,
+      label {
+        margin-left: 10px;
+      }
+    }
+    &--true {
+      color: green;
+      font-weight: 500;
+    }
+    &--false {
+      color: red;
+      font-weight: 500;
+    }
+  }
+  &__submit,
+  &__redo {
+    width: 100px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      background-color: orangered;
+    }
+  }
+}
