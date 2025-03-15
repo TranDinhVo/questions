@@ -37,7 +37,7 @@ function Register() {
       check = users.some((us) => us.token === token);
     }
     formData.token = token;
-    formData.id = (users.length + 1).totring();
+    formData.id = (users.length + 1).toString();
     const result = createUser(formData);
     if (result) {
       setFormData(init);
