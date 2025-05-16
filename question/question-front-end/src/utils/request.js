@@ -1,4 +1,4 @@
-const API_DOMAIN = "http://localhost:3002/";
+const API_DOMAIN = "https://questions-1-dejo.onrender.com/";
 
 export const get = async (path) => {
   const res = await fetch(API_DOMAIN + path);
