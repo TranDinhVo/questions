@@ -10,8 +10,6 @@
 ## Hướng dẫn cài đặt và chạy dự án
 ```sh
 1. Clone project về máy
-git clone https://github.com/TranDinhVo/questions.git
-cd questions
 
 2. Khởi động database
 cd database
